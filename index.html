@@ -1209,7 +1209,7 @@
 
             <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
               <form
-                action="forms/contact.php"
+                action="https://formspree.io/f/mknarzzq"
                 method="post"
                 role="form"
                 class="php-email-form"
@@ -1249,6 +1249,7 @@
                 <div class="form-group">
                   <label for="name">Message</label>
                   <textarea
+                    id="message"
                     class="form-control"
                     name="message"
                     rows="10"
@@ -1257,13 +1258,14 @@
                 </div>
                 <div class="my-3">
                   <div class="loading">Loading</div>
-                  <div class="error-message"></div>
                   <div class="sent-message">
                     Your message has been sent. Thank you!
                   </div>
                 </div>
                 <div class="text-center">
-                  <button type="submit">Send Message</button>
+                  <button type="submit" onClick="handleSubmit()">
+                    Send Message
+                  </button>
                 </div>
               </form>
             </div>
